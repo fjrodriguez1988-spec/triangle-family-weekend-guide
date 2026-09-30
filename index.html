@@ -470,48 +470,48 @@
   // FRIDAY/SATURDAY/SUNDAY below, even if the date matches — they only ever
   // appear in NC_STATE_AHEAD further down, cat: "wolfpack".
   const FRIDAY = [
-    { cat: "play", name: "Spooky Hollow First Friday", time: "5–8pm", loc: "Smoky Hollow, 421 N Harrington St, Raleigh", cost: "Free",
-      desc: "Halloween-themed family First Friday with kids' activities from Marbles Kids' Museum and complimentary face painting.",
-      link: "https://triangleonthecheap.com/spooky-hollow/", linkLabel: "Event info →" },
     { cat: "festival", name: "Triangle Oktoberfest", time: "5–10pm", loc: "Koka Booth Amphitheatre, Cary", cost: "Free (ages 15 & under) / $31.42 adult",
-      desc: "German festival with Bavarian food, live music, and kids' activities. Ages 15 and under get in free; adult tickets run $31.42 in advance.",
-      link: "https://triangleoktoberfest.org/", linkLabel: "Event info →" },
-    { cat: "market", name: "Pop-Up Music at North Hills", time: "6–9pm", loc: "The Commons, North Hills, Raleigh", cost: "Free",
-      desc: "Acoustic live music around North Hills' Commons — an easy, low-key stop while you're out for dinner.",
-      link: "https://triangleonthecheap.com/pop-up-music-north-hills/", linkLabel: "Event info →" }
+      desc: "German fall festival with Bavarian food, 50+ beers, wiener dog races, inflatables, face painting, and live music.",
+      link: "https://triangleonthecheap.com/triangle-oktoberfest/", linkLabel: "Event info →" },
+    { cat: "play", name: "First Friday Market & Movie Night: Ghostbusters", time: "5–9pm (movie 7:15pm)", loc: "Moore Square, downtown Raleigh", cost: "Free",
+      desc: "Outdoor market, food trucks, and field games followed by a free lawn screening of Ghostbusters for October's First Friday.",
+      link: "https://www.visitraleigh.com/event/first-friday-market-&-movie-night:-ghostbusters/105727/", linkLabel: "Event info →", preReg: true },
+    { cat: "play", name: "Movie Night: Frankenweenie", time: "6–10pm (seating opens 6pm)", loc: "Downtown Cary Park Great Lawn, Cary", cost: "Free",
+      desc: "Free outdoor family movie night with pre-screening activities and food trucks — bring chairs or a blanket.",
+      link: "https://www.visitraleigh.com/event/movie-night:-frankenweenie/104613/", linkLabel: "Event info →" }
   ];
 
   const SATURDAY = [
-    { cat: "festival", name: "Falling for Local at Dix Park", time: "11am–6pm", loc: "The Big Field, Dorothea Dix Park, Raleigh", cost: "Free",
-      desc: "180+ local vendors, 50+ food trucks, 20+ NC breweries, live music, plus free hayrides, inflatables, a pumpkin patch, and fall photo ops for the kids.",
-      link: "https://shoplocalraleigh.org/slr-events/falling-for-local-dix-park/", linkLabel: "Event info →" },
-    { cat: "festival", name: "NC Oktoberfest — \"Prost Y'all\"", time: "1–8pm", loc: "Fayetteville St, downtown Raleigh", cost: "Free",
-      desc: "35+ breweries and cideries, ~50 food trucks, local makers, and live music. Admission is free; drink tickets are purchased separately.",
-      link: "https://shoplocalraleigh.org/events/raleigh-1/shop-local-raleigh-events/nc-oktoberfest-prost-yall/", linkLabel: "Event info →" },
-    { cat: "festival", name: "Apex Latino Arts Festival", time: "3–7pm", loc: "Apex Town Hall, 73 Hunter St, Apex", cost: "Free",
-      desc: "Live music and entertainment, Latino-inspired arts and crafts, cultural country booths, and food vendors.",
-      link: "https://apexnc.org/1681/Latino-Arts-Festival", linkLabel: "Event info →" },
-    { cat: "play", name: "Sensory-Friendly Kung Fu Panda Screening", time: "11am", loc: "The Carolina Theatre, Raleigh", cost: "Free",
-      desc: "A lights-up, sound-lowered screening designed for kids who need a calmer movie environment.",
-      link: "https://www.carolinatheatre.org/", linkLabel: "Event info →" },
-    { cat: "play", name: "Crooktober Family Fest", time: "11am–4pm", loc: "Crooked Hammock Brewery, Raleigh", cost: "Free",
-      desc: "Fall-themed family festival with kid activities alongside the brewery's outdoor space.",
-      link: "https://doraleigh.com/", linkLabel: "Event info →" }
+    { cat: "festival", name: "Wendell Harvest Festival (98th Annual)", time: "9am–9pm (parade 10am)", loc: "Downtown Wendell", cost: "Free",
+      desc: "Wendell's biggest annual event — parade, 150+ craft and business booths, a Kids Village with a giant slide and face painting, and a live concert 6–9pm.",
+      link: "https://business.wendellchamber.com/events/details/2026-annual-harvest-festival-13907", linkLabel: "Event info →" },
+    { cat: "market", name: "Falling for Local at Dix Park", time: "11am–6pm", loc: "Dorothea Dix Park, Raleigh", cost: "Free",
+      desc: "150+ local makers, live music, food trucks, NC breweries, hayrides, inflatables, and fall photo ops for the kids.",
+      link: "https://shoplocalraleigh.org/events/raleigh-23/family-friendly-2/falling-for-local-3/", linkLabel: "Event info →" },
+    { cat: "farm", name: "Fall on First Avenue", time: "11am–2pm", loc: "Knightdale Station Park, Knightdale", cost: "Free",
+      desc: "Pumpkin painting, hayrides, a petting zoo, craft and food vendors, live music, plus a sensory-relaxation station.",
+      link: "https://fun4raleighkids.com/calendar/eventdetail/136505/-/fall-on-first-avenue-at-knightdale-station", linkLabel: "Event info →" },
+    { cat: "festival", name: "Celebrate Fuquay-Varina Festival", time: "10am–4pm", loc: "Downtown Fuquay-Varina", cost: "Free",
+      desc: "Live music, a chili cook-off, art vendors, and a free kids zone with a rock wall.",
+      link: "https://www.visitraleigh.com/event/celebrate-fuquay-varina-festival-2026/106309/", linkLabel: "Event info →" },
+    { cat: "farm", name: "Vollmer Farm — Back 40 Country Playground", time: "10am–6pm", loc: "677 NC Hwy 98 E, Bunn", cost: "$15 (ages 4–54) / $12.50 military, teachers, seniors 65+ / free 3 & under",
+      desc: "Corn maze, jumping pillow, slingshot, farm animals, and a wagon ride — includes a pie pumpkin. Open Saturdays and Sundays.",
+      link: "http://www.vollmerfarm.com/back-40-country-playground.html", linkLabel: "Event info →" }
   ];
 
   const SUNDAY = [
-    { cat: "festival", name: "Carolina Culture Food Festival", time: "12–6pm", loc: "Moore Square, downtown Raleigh", cost: "Free",
-      desc: "Food trucks, local businesses, and marketplace vendors filling out Moore Square for the day.",
-      link: "https://triangleonthecheap.com/carolina-culture-food-festival/", linkLabel: "Event info →" },
-    { cat: "farm", name: "Benson Mule Days", time: "12–5pm", loc: "Downtown Benson", cost: "$5 (kids 12 & under $2)",
-      desc: "77th annual mule festival — parade, live music, trolley rides, stable tours, and vendor area are free; mule-event admission is $5 per person, $2 for kids 12 and under.",
-      link: "https://bensonmuledays.com/mule-events/", linkLabel: "Event info →" },
-    { cat: "market", name: "Morgan Street Sessions", time: "12–4pm", loc: "Morgan Street Food Hall & Market, Raleigh", cost: "Free",
-      desc: "Easy indoor/outdoor food hall stop with live music — good for a low-key afternoon.",
-      link: "https://doraleigh.com/", linkLabel: "Event info →" },
-    { cat: "book", name: "StoryWalk", time: "Self-paced, park hours", loc: "Various Wake County Parks", cost: "Free",
-      desc: "Pages of a children's book posted along a walking trail — read it as you stroll. A good low-key option for younger kids.",
-      link: "https://www.wake.gov/departments-government/parks-recreation-open-space/programs-events/storywalksr", linkLabel: "Event info →" }
+    { cat: "play", name: "Instrument Petting Zoo", time: "2–4pm", loc: "Gipson Play Plaza, Raleigh", cost: "Free",
+      desc: "Hands-on, all-ages music event — boomwhackers, bucket percussion, and kazoos, no experience needed, plus a sensory art activity.",
+      link: "https://www.visitraleigh.com/event/instrument-petting-zoo/110246/", linkLabel: "Event info →" },
+    { cat: "market", name: "Cary Underground Market", time: "12–4pm", loc: "Bond Brothers Beer Co., Cary", cost: "Free to attend",
+      desc: "Monthly daytime market with 40+ local makers, a live band, and a food truck rodeo.",
+      link: "https://makrs.com/cary-underground-market", linkLabel: "Event info →" },
+    { cat: "play", name: "Jazz'd Up Sundays: Tia Fuller", time: "6:30–8pm", loc: "Downtown Cary Park Great Lawn, Cary", cost: "Free",
+      desc: "Free outdoor jazz concert, all ages welcome — bring chairs or a blanket and your own food.",
+      link: "https://www.visitraleigh.com/event/jazz%E2%80%99d-up-sundays:-tia-fuller/108869/", linkLabel: "Event info →" },
+    { cat: "farm", name: "Vollmer Farm — Back 40 Country Playground", time: "10am–6pm", loc: "677 NC Hwy 98 E, Bunn", cost: "$15 (ages 4–54) / $12.50 military, teachers, seniors 65+ / free 3 & under",
+      desc: "Corn maze, jumping pillow, slingshot, farm animals, and a wagon ride — includes a pie pumpkin. Open Saturdays and Sundays.",
+      link: "http://www.vollmerfarm.com/back-40-country-playground.html", linkLabel: "Event info →" }
   ];
 
   // NC State sports + NC State Latinx Alumni Network events over the NEXT
@@ -519,12 +519,21 @@
   // appear, even if a date falls within this week's Fri/Sat/Sun. Never also
   // add one to FRIDAY/SATURDAY/SUNDAY above.
   const NC_STATE_AHEAD = [
-    { cat: "wolfpack", name: "NC State Volleyball vs. Wake Forest", date: "Fri, Oct 2", time: "6pm", loc: "Reynolds Coliseum, NC State", cost: "Free (student ID) / $10 general",
-      desc: "Home match — general admission at the door or online.",
-      link: "https://gopack.com/sports/volleyball/schedule", linkLabel: "Tickets →", preReg: false },
-    { cat: "wolfpack", name: "NC State Latinx Alumni Network — LAN Tailgate (Homecoming)", date: "Sat, Oct 31", time: "5:30pm", loc: "The Local, Raleigh",
-      desc: "Part of the Latinx Alumni Network's Homecoming Weekend (Oct 29–Nov 1) — Día de los Muertos reception Oct 29, this tailgate Oct 31, farewell brunch Nov 1. Open to students, recent grads, and longtime alumni. Cost/RSVP wasn't listed in their own announcement — confirm directly via their Instagram before planning around it.",
-      link: "https://www.instagram.com/p/DdzZMOij-9X/", linkLabel: "Event post →", cost: "Not published — confirm via link", preReg: false }
+    { cat: "wolfpack", name: "NC State Latinx Alumni Network — LAN Social: Cafecito", date: "Sat, Oct 3", time: "11am–2pm", loc: "Cuya Cafe, Raleigh", cost: "Not published — confirm via link",
+      desc: "\"Represent Your Flag\" cultural social — DJ, cafecito, and culture-themed dress. Open to students, recent grads, and alumni.",
+      link: "https://www.instagram.com/p/DdqxjrdOB_F/", linkLabel: "Event post →", preReg: true },
+    { cat: "wolfpack", name: "NC State Women's Soccer vs. Pittsburgh — Pink Game", date: "Thu, Oct 8", time: "6pm", loc: "Dail Soccer Field, NC State", cost: "Free",
+      desc: "Free admission and parking — a breast cancer awareness themed home match, easy family outing on a weeknight.",
+      link: "https://gopack.com/sports/womens-soccer/schedule", linkLabel: "Schedule →", preReg: false },
+    { cat: "wolfpack", name: "NC State Volleyball vs. Syracuse", date: "Fri, Oct 9", time: "7pm", loc: "Reynolds Coliseum, NC State", cost: "$10 (conference match, per official gopack pricing)",
+      desc: "Home conference match at Valvano Arena.",
+      link: "https://gopack.com/sports/womens-volleyball/schedule", linkLabel: "Schedule →", preReg: false },
+    { cat: "wolfpack", name: "NC State Men's Soccer vs. UMKC — Superhero Night / Family Night", date: "Sun, Oct 11", time: "6pm", loc: "Dail Soccer Field, NC State", cost: "Free",
+      desc: "Free admission and parking — themed Family Night, a great fit for younger kids.",
+      link: "https://gopack.com/sports/mens-soccer/schedule", linkLabel: "Schedule →", preReg: false },
+    { cat: "wolfpack", name: "NC State Latinx Alumni Network — Día de los Muertos Welcome Reception", date: "Thu, Oct 29", time: "6:30–9:30pm", loc: "Cuya Cafe + Cocina, Raleigh", cost: "Not published — confirm via link",
+      desc: "Kickoff of NC State Homecoming Weekend 2026 for the Latinx Alumni Network.",
+      link: "https://www.instagram.com/p/DdzZMOij-9X/", linkLabel: "Event post →", preReg: true }
   ];
 
   function renderEvents(list, mountId) {
