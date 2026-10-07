@@ -409,17 +409,17 @@
   </div>
 
   <section class="day" id="fri">
-    <div class="day-head"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF6EF" stroke-width="2"><path d="M4 10h16M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Z"/><path d="M8 6V4M16 6V4"/></svg></span>Friday, Oct 2</div>
+    <div class="day-head"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF6EF" stroke-width="2"><path d="M4 10h16M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Z"/><path d="M8 6V4M16 6V4"/></svg></span>Friday, Oct 9</div>
     <div class="events" id="events-fri"></div>
   </section>
 
   <section class="day" id="sat">
-    <div class="day-head"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF6EF" stroke-width="2"><path d="M4 10h16M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Z"/><path d="M8 6V4M16 6V4"/></svg></span>Saturday, Oct 3</div>
+    <div class="day-head"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF6EF" stroke-width="2"><path d="M4 10h16M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Z"/><path d="M8 6V4M16 6V4"/></svg></span>Saturday, Oct 10</div>
     <div class="events" id="events-sat"></div>
   </section>
 
   <section class="day" id="sun">
-    <div class="day-head"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF6EF" stroke-width="2"><path d="M4 10h16M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Z"/><path d="M8 6V4M16 6V4"/></svg></span>Sunday, Oct 4</div>
+    <div class="day-head"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF6EF" stroke-width="2"><path d="M4 10h16M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Z"/><path d="M8 6V4M16 6V4"/></svg></span>Sunday, Oct 11</div>
     <div class="events" id="events-sun"></div>
   </section>
 
@@ -470,49 +470,58 @@
   // FRIDAY/SATURDAY/SUNDAY below, even if the date matches — they only ever
   // appear in NC_STATE_AHEAD further down, cat: "wolfpack".
   const FRIDAY = [
-    { cat: "festival", name: "Triangle Oktoberfest", time: "5–10pm", loc: "Koka Booth Amphitheatre, Cary", cost: "Free (ages 15 & under) / $31.42 adult",
-      desc: "German fall festival with Bavarian food, 50+ beers, wiener dog races, inflatables, face painting, and live music.",
-      link: "https://triangleonthecheap.com/triangle-oktoberfest/", linkLabel: "Event info →" },
-    { cat: "play", name: "First Friday Market & Movie Night: Ghostbusters", time: "5–9pm (movie 7:15pm)", loc: "Moore Square, downtown Raleigh", cost: "Free",
-      desc: "Outdoor market, food trucks, and field games followed by a free lawn screening of Ghostbusters for October's First Friday.",
-      link: "https://www.visitraleigh.com/event/first-friday-market-&-movie-night:-ghostbusters/105727/", linkLabel: "Event info →", preReg: true },
-    { cat: "play", name: "Movie Night: Frankenweenie", time: "6–10pm (seating opens 6pm)", loc: "Downtown Cary Park Great Lawn, Cary", cost: "Free",
-      desc: "Free outdoor family movie night with pre-screening activities and food trucks — bring chairs or a blanket.",
-      link: "https://www.visitraleigh.com/event/movie-night:-frankenweenie/104613/", linkLabel: "Event info →" }
-  ];
+    { cat: "farm", name: "Page Farms Pumpkin Picking", time: "9am–6pm", loc: "6100 Mt. Herman Rd., Raleigh", cost: "$14",
+      desc: "U-pick pumpkins and fall decorations in a family-friendly farm setting.",
+      link: "https://www.raleighmomclub.com/events/page-farms-pumpkin-picking", linkLabel: "Event info →" },
+    { cat: "festival", name: "Paint the Parks Exhibit at Yates Mill Park", time: "8am–7pm", loc: "Yates Mill Park, Raleigh", cost: "Free",
+      desc: "Last weekend for outdoor art exhibit and historic mill exploration.",
+      link: "https://www.raleighmomclub.com/events/paint-the-parks-exhibit-last-weekend-at-yates-mill-park", linkLabel: "Event info →" },
+    { cat: "farm", name: "Hidwell Family Farm's Pumpkin Patch and Barrel Train Rides", time: "4–7pm", loc: "Hidwell Family Farm, Apex", cost: "Check price",
+      desc: "Pick a fresh pumpkin or mum with your entry, plus barrel train rides.",
+      link: "https://www.raleighmomclub.com/events/hidwell-family-farms-pumpkin-patch-and-barrell-train-rides", linkLabel: "Event info →" },
+    { cat: "festival", name: "The Witch's Haunted Barn | Not So Scary (No-Actor Days)", time: "12–5pm", loc: "Firefly Farm, Hillsborough", cost: "$13",
+      desc: "Family-friendly haunted barn perfect for kids in Halloween costumes.",
+      link: "https://www.raleighmomclub.com/events/the-witchs-haunted-barn", linkLabel: "Event info →" },
+    { cat: "play", name: "Rock the Block Concert Series with Faith and Blue", time: "6–9pm", loc: "Town of Zebulon, Zebulon", cost: "Free",
+      desc: "Outdoor concert series — bring your own lawn chairs or blankets.",
+      link: "https://www.raleighmomclub.com/events/rock-the-block-concert-series-2026-with-the-main-e-vr-106412", linkLabel: "Event info →" },
+    { cat: "play", name: "Friday Family Flicks - Toy Story 5", time: "6–10pm", loc: "Garner Recreation Center, Garner", cost: "Free",
+      desc: "Outdoor family movie night — bring lawn chairs or blankets.",
+      link: "https://www.raleighmomclub.com/events/friday-family-flicks---toy-story-5-vr-103416", linkLabel: "Event info →" }
+  ]
 
   const SATURDAY = [
-    { cat: "festival", name: "Wendell Harvest Festival (98th Annual)", time: "9am–9pm (parade 10am)", loc: "Downtown Wendell", cost: "Free",
-      desc: "Wendell's biggest annual event — parade, 150+ craft and business booths, a Kids Village with a giant slide and face painting, and a live concert 6–9pm.",
-      link: "https://business.wendellchamber.com/events/details/2026-annual-harvest-festival-13907", linkLabel: "Event info →" },
-    { cat: "market", name: "Falling for Local at Dix Park", time: "11am–6pm", loc: "Dorothea Dix Park, Raleigh", cost: "Free",
-      desc: "150+ local makers, live music, food trucks, NC breweries, hayrides, inflatables, and fall photo ops for the kids.",
-      link: "https://shoplocalraleigh.org/events/raleigh-23/family-friendly-2/falling-for-local-3/", linkLabel: "Event info →" },
-    { cat: "farm", name: "Fall on First Avenue", time: "11am–2pm", loc: "Knightdale Station Park, Knightdale", cost: "Free",
-      desc: "Pumpkin painting, hayrides, a petting zoo, craft and food vendors, live music, plus a sensory-relaxation station.",
-      link: "https://fun4raleighkids.com/calendar/eventdetail/136505/-/fall-on-first-avenue-at-knightdale-station", linkLabel: "Event info →" },
-    { cat: "festival", name: "Celebrate Fuquay-Varina Festival", time: "10am–4pm", loc: "Downtown Fuquay-Varina", cost: "Free",
-      desc: "Live music, a chili cook-off, art vendors, and a free kids zone with a rock wall.",
-      link: "https://www.visitraleigh.com/event/celebrate-fuquay-varina-festival-2026/106309/", linkLabel: "Event info →" },
-    { cat: "farm", name: "Vollmer Farm — Back 40 Country Playground", time: "10am–6pm", loc: "677 NC Hwy 98 E, Bunn", cost: "$15 (ages 4–54) / $12.50 military, teachers, seniors 65+ / free 3 & under",
-      desc: "Corn maze, jumping pillow, slingshot, farm animals, and a wagon ride — includes a pie pumpkin. Open Saturdays and Sundays.",
-      link: "http://www.vollmerfarm.com/back-40-country-playground.html", linkLabel: "Event info →" }
-  ];
+    { cat: "festival", name: "Fall Festival at West & Woodall", time: "1–4pm", loc: "West & Woodall, Raleigh", cost: "Free",
+      desc: "Fall festival with pumpkins, games, and activities for families.",
+      link: "https://www.raleighmomclub.com/events/fall-festival-at-west-woodall-oct-10-including-woo-totc-186653", linkLabel: "Event info →" },
+    { cat: "farm", name: "Fall Season at Naylor Family Farm Corn Maze and Pumpkin Patch", time: "9am–6pm", loc: "6016 US 401 N, Fuquay-Varina", cost: "$25",
+      desc: "Corn maze, pumpkins, and fall activities in a family farm setting.",
+      link: "https://www.raleighmomclub.com/events/fall-season-at-naylor-family-farm-corn-maze-and-pumpkin-patch", linkLabel: "Event info →" },
+    { cat: "play", name: "Baby & Toddler Item Swap", time: "10am–12pm", loc: "North Regional Library, Durham", cost: "Free",
+      desc: "Donate gently used baby and toddler items and take home what you need.",
+      link: "https://www.raleighmomclub.com/events/baby-toddler-item-swap-dcl-17741163", linkLabel: "Event info →" },
+    { cat: "play", name: "Teen DIY Faux Stain-Glass", time: "2–3pm", loc: "Wendell Community Library, Wendell", cost: "Free",
+      desc: "Creative arts program for teens with faux stained glass craft.",
+      link: "https://www.raleighmomclub.com/events/teen-diy-faux-stain-glass-wg-b7e81a08", linkLabel: "Event info →" },
+    { cat: "play", name: "Family Fun Day", time: "11am–2pm", loc: "City of Raleigh Museum (COR Museum), Raleigh", cost: "Free",
+      desc: "Family activities at the local history museum.",
+      link: "https://www.raleighmomclub.com/events/family-fun-day-at-urban-air-raleigh", linkLabel: "Event info →" },
+    { cat: "play", name: "Trick-or-Eat Food Truck Rodeo / Garner Night Out / Touch-a-Truck", time: "5–9pm", loc: "Downtown Garner, Garner", cost: "Free",
+      desc: "Food trucks, entertainment, and kids' activities in downtown Garner.",
+      link: "https://www.raleighmomclub.com/events/trick-or-eat-food-truck-rodeogarner-night-out-touc-vr-103058", linkLabel: "Event info →" }
+  ]
 
   const SUNDAY = [
-    { cat: "play", name: "Instrument Petting Zoo", time: "2–4pm", loc: "Gipson Play Plaza, Raleigh", cost: "Free",
-      desc: "Hands-on, all-ages music event — boomwhackers, bucket percussion, and kazoos, no experience needed, plus a sensory art activity.",
-      link: "https://www.visitraleigh.com/event/instrument-petting-zoo/110246/", linkLabel: "Event info →" },
-    { cat: "market", name: "Cary Underground Market", time: "12–4pm", loc: "Bond Brothers Beer Co., Cary", cost: "Free to attend",
-      desc: "Monthly daytime market with 40+ local makers, a live band, and a food truck rodeo.",
-      link: "https://makrs.com/cary-underground-market", linkLabel: "Event info →" },
-    { cat: "play", name: "Jazz'd Up Sundays: Tia Fuller", time: "6:30–8pm", loc: "Downtown Cary Park Great Lawn, Cary", cost: "Free",
-      desc: "Free outdoor jazz concert, all ages welcome — bring chairs or a blanket and your own food.",
-      link: "https://www.visitraleigh.com/event/jazz%E2%80%99d-up-sundays:-tia-fuller/108869/", linkLabel: "Event info →" },
-    { cat: "farm", name: "Vollmer Farm — Back 40 Country Playground", time: "10am–6pm", loc: "677 NC Hwy 98 E, Bunn", cost: "$15 (ages 4–54) / $12.50 military, teachers, seniors 65+ / free 3 & under",
-      desc: "Corn maze, jumping pillow, slingshot, farm animals, and a wagon ride — includes a pie pumpkin. Open Saturdays and Sundays.",
-      link: "http://www.vollmerfarm.com/back-40-country-playground.html", linkLabel: "Event info →" }
-  ];
+    { cat: "play", name: "Jazz'd Up Sundays: Free Concert Series", time: "6:30–8pm", loc: "Downtown Cary Park, Cary", cost: "Free",
+      desc: "Free outdoor jazz concert for all ages — bring chairs and your own food.",
+      link: "https://www.raleighmomclub.com/events/jazzd-up-sundays", linkLabel: "Event info →" },
+    { cat: "market", name: "Raleigh Underground Market", time: "11am–3pm", loc: "Midtown Park, North Hills, Raleigh", cost: "Free",
+      desc: "Monthly market with 40+ local makers, a live band, and a food truck rodeo.",
+      link: "https://www.raleighmomclub.com/events/raleigh-underground-market-vr-103715", linkLabel: "Event info →" },
+    { cat: "festival", name: "Fall Festival at Highland United Methodist Church", time: "4–6pm", loc: "Highland United Methodist Church, Raleigh", cost: "Free",
+      desc: "Fall festival with activities for families; bring canned goods for Interfaith Food Shuttle.",
+      link: "https://www.raleighmomclub.com/events/fall-festival-at-highland-united-methodist-church-totc-370942", linkLabel: "Event info →" }
+  ]
 
   // NC State sports + NC State Latinx Alumni Network events over the NEXT
   // MONTH (not just this Fri/Sat/Sun) — this is the ONLY place these ever
