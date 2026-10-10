@@ -383,6 +383,9 @@
     color: var(--copper-ink);
     text-align: center;
   }
+  .cal-btns { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .cal-btn { font-size: 12px; font-weight: 600; text-decoration: none; padding: 5px 10px; border-radius: 999px; border: 1.5px solid #0C2C42; color: #0C2C42; background: #FAF6EF; }
+  .cal-btn:hover { background: #0C2C42; color: #FAF6EF; }
 </style>
 
 <div class="wrap">
@@ -470,55 +473,55 @@
   // FRIDAY/SATURDAY/SUNDAY below, even if the date matches — they only ever
   // appear in NC_STATE_AHEAD further down, cat: "wolfpack".
   const FRIDAY = [
-    { cat: "farm", name: "Page Farms Pumpkin Picking", time: "9am–6pm", loc: "6100 Mt. Herman Rd., Raleigh", cost: "$14",
+    { cat: "farm", name: "Page Farms Pumpkin Picking", start: "2026-10-10T09:00", end: "2026-10-10T18:00", time: "9am–6pm", loc: "6100 Mt. Herman Rd., Raleigh", cost: "$14",
       desc: "U-pick pumpkins and fall decorations in a family-friendly farm setting.",
       link: "https://www.raleighmomclub.com/events/page-farms-pumpkin-picking", linkLabel: "Event info →" },
-    { cat: "festival", name: "Paint the Parks Exhibit at Yates Mill Park", time: "8am–7pm", loc: "Yates Mill Park, Raleigh", cost: "Free",
+    { cat: "festival", name: "Paint the Parks Exhibit at Yates Mill Park", start: "2026-10-10T08:00", end: "2026-10-10T19:00", time: "8am–7pm", loc: "Yates Mill Park, Raleigh", cost: "Free",
       desc: "Last weekend for outdoor art exhibit and historic mill exploration.",
       link: "https://www.raleighmomclub.com/events/paint-the-parks-exhibit-last-weekend-at-yates-mill-park", linkLabel: "Event info →" },
-    { cat: "farm", name: "Hidwell Family Farm's Pumpkin Patch and Barrel Train Rides", time: "4–7pm", loc: "Hidwell Family Farm, Apex", cost: "$7",
+    { cat: "farm", name: "Hidwell Family Farm's Pumpkin Patch and Barrel Train Rides", start: "2026-10-09T16:00", end: "2026-10-09T19:00", time: "4–7pm", loc: "Hidwell Family Farm, Apex", cost: "$7",
       desc: "Admission includes a small pumpkin or mum, plus the barrel train touring the farm.",
       link: "https://www.raleighmomclub.com/events/hidwell-family-farms-pumpkin-patch-and-barrell-train-rides", linkLabel: "Event info →" },
-    { cat: "festival", name: "The Witch's Haunted Barn | Not So Scary (No-Actor Days)", time: "12–5pm", loc: "Firefly Farm, Hillsborough", cost: "$13",
+    { cat: "festival", name: "The Witch's Haunted Barn | Not So Scary (No-Actor Days)", start: "2026-10-10T12:00", end: "2026-10-10T19:00", time: "12–5pm", loc: "Firefly Farm, Hillsborough", cost: "$13",
       desc: "Family-friendly haunted barn perfect for kids in Halloween costumes.",
       link: "https://www.raleighmomclub.com/events/the-witchs-haunted-barn", linkLabel: "Event info →" },
-    { cat: "play", name: "Rock the Block Concert Series with Faith and Blue", time: "6–9pm", loc: "Town of Zebulon, Zebulon", cost: "Free",
+    { cat: "play", name: "Rock the Block Concert Series with Faith and Blue", start: "2026-10-09T18:00", end: "2026-10-09T21:00", time: "6–9pm", loc: "Town of Zebulon, Zebulon", cost: "Free",
       desc: "Outdoor concert series — bring your own lawn chairs or blankets.",
       link: "https://www.raleighmomclub.com/events/rock-the-block-concert-series-2026-with-the-main-e-vr-106412", linkLabel: "Event info →" },
-    { cat: "play", name: "Friday Family Flicks - Toy Story 5", time: "6–10pm", loc: "Garner Recreation Center, Garner", cost: "Free",
+    { cat: "play", name: "Friday Family Flicks - Toy Story 5", start: "2026-10-09T18:00", end: "2026-10-09T22:00", time: "6–10pm", loc: "Garner Recreation Center, Garner", cost: "Free",
       desc: "Outdoor family movie night — bring lawn chairs or blankets.",
       link: "https://www.raleighmomclub.com/events/friday-family-flicks---toy-story-5-vr-103416", linkLabel: "Event info →" }
   ]
 
   const SATURDAY = [
-    { cat: "festival", name: "Fall Festival at West & Woodall", time: "1–4pm", loc: "West & Woodall, Raleigh", cost: "Free",
+    { cat: "festival", name: "Fall Festival at West & Woodall", start: "2026-10-10T13:00", end: "2026-10-10T16:00", time: "1–4pm", loc: "West & Woodall, Raleigh", cost: "Free",
       desc: "Fall festival with pumpkins, games, and activities for families.",
       link: "https://www.raleighmomclub.com/events/fall-festival-at-west-woodall-oct-10-including-woo-totc-186653", linkLabel: "Event info →" },
-    { cat: "farm", name: "Fall Season at Naylor Family Farm Corn Maze and Pumpkin Patch", time: "9am–6pm", loc: "6016 US 401 N, Fuquay-Varina", cost: "$25",
+    { cat: "farm", name: "Fall Season at Naylor Family Farm Corn Maze and Pumpkin Patch", start: "2026-10-10T09:00", end: "2026-10-10T18:00", time: "9am–6pm", loc: "6016 US 401 N, Fuquay-Varina", cost: "$25",
       desc: "Corn maze, pumpkins, and fall activities in a family farm setting.",
       link: "https://www.raleighmomclub.com/events/fall-season-at-naylor-family-farm-corn-maze-and-pumpkin-patch", linkLabel: "Event info →" },
-    { cat: "play", name: "Baby & Toddler Item Swap", time: "10am–12pm", loc: "North Regional Library, Durham", cost: "Free",
+    { cat: "play", name: "Baby & Toddler Item Swap", start: "2026-10-10T10:00", end: "2026-10-10T12:00", time: "10am–12pm", loc: "North Regional Library, Durham", cost: "Free",
       desc: "Donate gently used baby and toddler items and take home what you need.",
       link: "https://www.raleighmomclub.com/events/baby-toddler-item-swap-dcl-17741163", linkLabel: "Event info →" },
-    { cat: "play", name: "Teen DIY Faux Stain-Glass", time: "2–3pm", loc: "Wendell Community Library, Wendell", cost: "Free",
+    { cat: "play", name: "Teen DIY Faux Stain-Glass", start: "2026-10-10T14:00", end: "2026-10-10T15:00", time: "2–3pm", loc: "Wendell Community Library, Wendell", cost: "Free",
       desc: "Creative arts program for teens with faux stained glass craft.",
       link: "https://www.raleighmomclub.com/events/teen-diy-faux-stain-glass-wg-b7e81a08", linkLabel: "Event info →" },
-    { cat: "play", name: "Family Fun Day", time: "11am–2pm", loc: "City of Raleigh Museum (COR Museum), Raleigh", cost: "Not published — confirm via link",
+    { cat: "play", name: "Family Fun Day", start: "2026-10-10T11:00", end: "2026-10-10T14:00", time: "11am–2pm", loc: "City of Raleigh Museum (COR Museum), Raleigh", cost: "Not published — confirm via link",
       desc: "Family activities at the local history museum.",
       link: "https://www.raleighmomclub.com/events/family-fun-day-at-urban-air-raleigh", linkLabel: "Event info →" },
-    { cat: "play", name: "Trick-or-Eat Food Truck Rodeo / Garner Night Out / Touch-a-Truck", time: "5–9pm", loc: "Downtown Garner, Garner", cost: "Free",
+    { cat: "play", name: "Trick-or-Eat Food Truck Rodeo / Garner Night Out / Touch-a-Truck", start: "2026-10-10T17:00", end: "2026-10-10T21:00", time: "5–9pm", loc: "Downtown Garner, Garner", cost: "Free",
       desc: "Food trucks, entertainment, and kids' activities in downtown Garner.",
       link: "https://www.raleighmomclub.com/events/trick-or-eat-food-truck-rodeogarner-night-out-touc-vr-103058", linkLabel: "Event info →" }
   ]
 
   const SUNDAY = [
-    { cat: "play", name: "Jazz'd Up Sundays: Free Concert Series", time: "6:30–8pm", loc: "Downtown Cary Park, Cary", cost: "Free",
+    { cat: "play", name: "Jazz'd Up Sundays: Free Concert Series", start: "2026-10-11T18:30", end: "2026-10-11T20:00", time: "6:30–8pm", loc: "Downtown Cary Park, Cary", cost: "Free",
       desc: "Free outdoor jazz concert for all ages — bring chairs and your own food.",
       link: "https://www.raleighmomclub.com/events/jazzd-up-sundays", linkLabel: "Event info →" },
-    { cat: "market", name: "Raleigh Underground Market", time: "11am–3pm", loc: "Midtown Park, North Hills, Raleigh", cost: "Free",
+    { cat: "market", name: "Raleigh Underground Market", start: "2026-10-11T11:00", end: "2026-10-11T15:00", time: "11am–3pm", loc: "Midtown Park, North Hills, Raleigh", cost: "Free",
       desc: "Monthly market with 40+ local makers, a live band, and a food truck rodeo.",
       link: "https://www.raleighmomclub.com/events/raleigh-underground-market-vr-103715", linkLabel: "Event info →" },
-    { cat: "festival", name: "Fall Festival at Highland United Methodist Church", time: "4–6pm", loc: "Highland United Methodist Church, Raleigh", cost: "Free",
+    { cat: "festival", name: "Fall Festival at Highland United Methodist Church", start: "2026-10-11T16:00", end: "2026-10-11T18:00", time: "4–6pm", loc: "Highland United Methodist Church, Raleigh", cost: "Free",
       desc: "Fall festival with activities for families; bring canned goods for Interfaith Food Shuttle.",
       link: "https://www.raleighmomclub.com/events/fall-festival-at-highland-united-methodist-church-totc-370942", linkLabel: "Event info →" }
   ]
@@ -528,16 +531,50 @@
   // appear, even if a date falls within this week's Fri/Sat/Sun. Never also
   // add one to FRIDAY/SATURDAY/SUNDAY above.
   const NC_STATE_AHEAD = [
-    { cat: "wolfpack", name: "NC State Volleyball vs. Syracuse", date: "Fri, Oct 9", time: "7pm", loc: "Reynolds Coliseum, NC State", cost: "Not published — confirm via link",
+    { cat: "wolfpack", name: "NC State Volleyball vs. Syracuse", date: "Fri, Oct 9", start: "2026-10-09T19:00", end: "2026-10-09T21:00", time: "7pm", loc: "Reynolds Coliseum, NC State", cost: "Not published — confirm via link",
       desc: "Home conference match at Valvano Arena.",
       link: "https://gopack.com/sports/womens-volleyball/schedule", linkLabel: "Schedule →", preReg: false },
-    { cat: "wolfpack", name: "NC State Men's Soccer vs. #4 UMKC", date: "Sun, Oct 11", time: "6pm", loc: "Dail Soccer Field, NC State", cost: "Not published — confirm via link",
+    { cat: "wolfpack", name: "NC State Men's Soccer vs. #4 UMKC", date: "Sun, Oct 11", start: "2026-10-11T18:00", end: "2026-10-11T20:00", time: "6pm", loc: "Dail Soccer Field, NC State", cost: "Not published — confirm via link",
       desc: "Home match against a ranked UMKC side on a Sunday evening.",
       link: "https://gopack.com/sports/mens-soccer/schedule", linkLabel: "Schedule →", preReg: false },
-    { cat: "wolfpack", name: "NC State Latinx Alumni Network — Día de los Muertos Welcome Reception", date: "Thu, Oct 29", time: "6:30–9:30pm", loc: "Cuya Cafe + Cocina, Raleigh", cost: "Not published — confirm via link",
+    { cat: "wolfpack", name: "NC State Latinx Alumni Network — Día de los Muertos Welcome Reception", date: "Thu, Oct 29", start: "2026-10-29T18:30", end: "2026-10-29T21:30", time: "6:30–9:30pm", loc: "Cuya Cafe + Cocina, Raleigh", cost: "Not published — confirm via link",
       desc: "Kickoff of NC State Homecoming Weekend 2026 for the Latinx Alumni Network.",
       link: "https://www.instagram.com/p/DdzZMOij-9X/", linkLabel: "Event post →", preReg: true }
   ];
+
+  const TZ_OFFSET = "-04:00";
+  const pad = n => String(n).padStart(2, "0");
+  function utcStamp(local) {
+    const d = new Date(local + TZ_OFFSET);
+    return `${d.getUTCFullYear()}${pad(d.getUTCMonth() + 1)}${pad(d.getUTCDate())}T${pad(d.getUTCHours())}${pad(d.getUTCMinutes())}00Z`;
+  }
+  function icsText(t) {
+    return String(t).replace(/\\/g, "\\\\").replace(/;/g, "\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
+  }
+  function calButtons(ev) {
+    if (!ev.start || !ev.end) return "";
+    const details = `${ev.desc} ${ev.link || ""}`.trim();
+    const google = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+      `&text=${encodeURIComponent(ev.name)}&dates=${utcStamp(ev.start)}/${utcStamp(ev.end)}` +
+      `&location=${encodeURIComponent(ev.loc)}&details=${encodeURIComponent(details)}`;
+    const outlook = "https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent" +
+      `&subject=${encodeURIComponent(ev.name)}&startdt=${ev.start}:00&enddt=${ev.end}:00` +
+      `&location=${encodeURIComponent(ev.loc)}&body=${encodeURIComponent(details)}`;
+    const ics = [
+      "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//El Dorado Home Group//Weekend Guide//EN", "BEGIN:VEVENT",
+      `UID:${utcStamp(ev.start)}-${ev.name.replace(/\W+/g, "").slice(0, 40)}@weekend-guide`,
+      `DTSTAMP:${utcStamp(ev.start)}`, `DTSTART:${utcStamp(ev.start)}`, `DTEND:${utcStamp(ev.end)}`,
+      `SUMMARY:${icsText(ev.name)}`, `LOCATION:${icsText(ev.loc)}`, `DESCRIPTION:${icsText(details)}`,
+      "END:VEVENT", "END:VCALENDAR"
+    ].join("\r\n");
+    const fname = ev.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") + ".ics";
+    const icsHref = "data:text/calendar;charset=utf-8," + encodeURIComponent(ics);
+    return `<div class="cal-btns">
+              <a class="cal-btn" href="${google}" target="_blank" rel="noopener">+ Google Calendar</a>
+              <a class="cal-btn" href="${outlook}" target="_blank" rel="noopener">+ Outlook</a>
+              <a class="cal-btn" href="${icsHref}" download="${fname}">+ Apple / Other (.ics)</a>
+            </div>`;
+  }
 
   function renderEvents(list, mountId) {
     const mount = document.getElementById(mountId);
@@ -561,6 +598,7 @@
             <p class="meta">${metaLine}</p>
             <p class="desc">${ev.desc}</p>
             ${link}
+            ${calButtons(ev)}
           </div>
         </article>`;
     }).join("");
