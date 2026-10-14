@@ -401,7 +401,7 @@
     </div>
     <span class="tagline">This week's family fun — free &amp; cheap!</span>
     <h1>Triangle Family Weekend Guide</h1>
-    <div class="dates">October 9–11, 2026</div>
+    <div class="dates">October 16–18, 2026</div>
     <p class="intro">A running list of things to do with the kids around Raleigh, Cary, Wendell, and the rest of the Triangle — every price is spelled out, and every event links out in case you need to grab a ticket. Also keeping an eye out for NC State sports and NC State Latinx Alumni Network events each week — those are marked with the wolf icon, and anything needing advance sign-up is flagged "Pre-register."</p>
     <div class="jumpnav">
       <a href="#fri">Friday →</a>
@@ -412,17 +412,17 @@
   </div>
 
   <section class="day" id="fri">
-    <div class="day-head"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF6EF" stroke-width="2"><path d="M4 10h16M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Z"/><path d="M8 6V4M16 6V4"/></svg></span>Friday, Oct 9</div>
+    <div class="day-head"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF6EF" stroke-width="2"><path d="M4 10h16M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Z"/><path d="M8 6V4M16 6V4"/></svg></span>Friday, Oct 16</div>
     <div class="events" id="events-fri"></div>
   </section>
 
   <section class="day" id="sat">
-    <div class="day-head"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF6EF" stroke-width="2"><path d="M4 10h16M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Z"/><path d="M8 6V4M16 6V4"/></svg></span>Saturday, Oct 10</div>
+    <div class="day-head"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF6EF" stroke-width="2"><path d="M4 10h16M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Z"/><path d="M8 6V4M16 6V4"/></svg></span>Saturday, Oct 17</div>
     <div class="events" id="events-sat"></div>
   </section>
 
   <section class="day" id="sun">
-    <div class="day-head"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF6EF" stroke-width="2"><path d="M4 10h16M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Z"/><path d="M8 6V4M16 6V4"/></svg></span>Sunday, Oct 11</div>
+    <div class="day-head"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF6EF" stroke-width="2"><path d="M4 10h16M4 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Z"/><path d="M8 6V4M16 6V4"/></svg></span>Sunday, Oct 18</div>
     <div class="events" id="events-sun"></div>
   </section>
 
@@ -473,57 +473,51 @@
   // FRIDAY/SATURDAY/SUNDAY below, even if the date matches — they only ever
   // appear in NC_STATE_AHEAD further down, cat: "wolfpack".
   const FRIDAY = [
-    { cat: "farm", name: "Page Farms Pumpkin Picking", start: "2026-10-10T09:00", end: "2026-10-10T18:00", time: "9am–6pm", loc: "6100 Mt. Herman Rd., Raleigh", cost: "$14",
-      desc: "U-pick pumpkins and fall decorations in a family-friendly farm setting.",
-      link: "https://www.raleighmomclub.com/events/page-farms-pumpkin-picking", linkLabel: "Event info →" },
-    { cat: "festival", name: "Paint the Parks Exhibit at Yates Mill Park", start: "2026-10-10T08:00", end: "2026-10-10T19:00", time: "8am–7pm", loc: "Yates Mill Park, Raleigh", cost: "Free",
-      desc: "Last weekend for outdoor art exhibit and historic mill exploration.",
-      link: "https://www.raleighmomclub.com/events/paint-the-parks-exhibit-last-weekend-at-yates-mill-park", linkLabel: "Event info →" },
-    { cat: "farm", name: "Hidwell Family Farm's Pumpkin Patch and Barrel Train Rides", start: "2026-10-09T16:00", end: "2026-10-09T19:00", time: "4–7pm", loc: "Hidwell Family Farm, Apex", cost: "$7",
+    { cat: "farm", name: "Hidwell Family Farm's Pumpkin Patch and Barrel Train Rides", start: "2026-10-16T16:00", end: "2026-10-16T19:00", time: "4–7pm", loc: "Hidwell Family Farm, Apex", cost: "$7",
       desc: "Admission includes a small pumpkin or mum, plus the barrel train touring the farm.",
-      link: "https://www.raleighmomclub.com/events/hidwell-family-farms-pumpkin-patch-and-barrell-train-rides", linkLabel: "Event info →" },
-    { cat: "festival", name: "The Witch's Haunted Barn | Not So Scary (No-Actor Days)", start: "2026-10-10T12:00", end: "2026-10-10T19:00", time: "12–5pm", loc: "Firefly Farm, Hillsborough", cost: "$13",
+      link: "https://raleighmomclub.com/events/hidwell-family-farms-pumpkin-patch-and-barrell-train-rides", linkLabel: "Event info →" },
+    { cat: "festival", name: "The Witch's Haunted Barn | Not So Scary (No-Actor Days)", start: "2026-10-16T12:00", end: "2026-10-16T17:00", time: "12–5pm", loc: "Firefly Farm, Hillsborough", cost: "$13",
       desc: "Family-friendly haunted barn perfect for kids in Halloween costumes.",
-      link: "https://www.raleighmomclub.com/events/the-witchs-haunted-barn", linkLabel: "Event info →" },
-    { cat: "play", name: "Rock the Block Concert Series with Faith and Blue", start: "2026-10-09T18:00", end: "2026-10-09T21:00", time: "6–9pm", loc: "Town of Zebulon, Zebulon", cost: "Free",
-      desc: "Outdoor concert series — bring your own lawn chairs or blankets.",
-      link: "https://www.raleighmomclub.com/events/rock-the-block-concert-series-2026-with-the-main-e-vr-106412", linkLabel: "Event info →" },
-    { cat: "play", name: "Friday Family Flicks - Toy Story 5", start: "2026-10-09T18:00", end: "2026-10-09T22:00", time: "6–10pm", loc: "Garner Recreation Center, Garner", cost: "Free",
-      desc: "Outdoor family movie night — bring lawn chairs or blankets.",
-      link: "https://www.raleighmomclub.com/events/friday-family-flicks---toy-story-5-vr-103416", linkLabel: "Event info →" }
+      link: "https://raleighmomclub.com/events/the-witchs-haunted-barn", linkLabel: "Event info →" },
+    { cat: "farm", name: "Page Farms Pumpkin Picking", start: "2026-10-16T09:00", end: "2026-10-16T18:00", time: "9am–6pm", loc: "6100 Mt. Herman Rd., Raleigh", cost: "$14",
+      desc: "U-pick pumpkins and fall decorations in a family-friendly farm setting.",
+      link: "https://raleighmomclub.com/events/page-farms-pumpkin-picking", linkLabel: "Event info →" },
+    { cat: "farm", name: "Hill Ridge Farms Fall Pumpkin Festival", start: "2026-10-16T09:30", end: "2026-10-16T18:30", time: "9:30am–6:30pm", loc: "703 Tarboro Road, Youngsville", cost: "$24.95",
+      desc: "Fall festival with pumpkins, hayrides, and family activities at a local farm.",
+      link: "https://raleighmomclub.com/events/hill-ridge-farms-fall-pumpkin-festival-vr-109393", linkLabel: "Event info →" },
+    { cat: "festival", name: "Paint the Parks Exhibit at Blue Jay Point County Park", start: "2026-10-16T08:00", end: "2026-10-16T18:30", time: "8am–6:30pm", loc: "3200 Pleasant Union Church Rd., Raleigh", cost: "Free",
+      desc: "Outdoor art exhibit and nature exploration at a scenic county park.",
+      link: "https://raleighmomclub.com/events/opening-weekend-of-paint-the-parks-exhibit-at-blue-jay-point-county-park", linkLabel: "Event info →" },
+    { cat: "sports", name: "NC State Fair", start: "2026-10-16T09:00", end: "2026-10-16T23:30", time: "9am–11:30pm", loc: "4285 Trinity Rd., Raleigh", cost: "$5",
+      desc: "State fair with rides, games, food, and entertainment for all ages.",
+      link: "https://raleighmomclub.com/events/nc-state-fair-vr-106415", linkLabel: "Event info →" },
+    { cat: "festival", name: "Ponder Parade of Homes 2026", start: "2026-10-16T17:00", end: "2026-10-16T21:00", time: "5pm onwards", loc: "Ponder, Wendell", cost: "Free",
+      desc: "Self-guided tour of new homes in the Ponder community.",
+      link: "https://raleighmomclub.com/events/ponder-parade-of-homes-2026", linkLabel: "Tour info →" }
   ]
 
   const SATURDAY = [
-    { cat: "festival", name: "Fall Festival at West & Woodall", start: "2026-10-10T13:00", end: "2026-10-10T16:00", time: "1–4pm", loc: "West & Woodall, Raleigh", cost: "Free",
-      desc: "Fall festival with pumpkins, games, and activities for families.",
-      link: "https://www.raleighmomclub.com/events/fall-festival-at-west-woodall-oct-10-including-woo-totc-186653", linkLabel: "Event info →" },
-    { cat: "farm", name: "Fall Season at Naylor Family Farm Corn Maze and Pumpkin Patch", start: "2026-10-10T09:00", end: "2026-10-10T18:00", time: "9am–6pm", loc: "6016 US 401 N, Fuquay-Varina", cost: "$25",
-      desc: "Corn maze, pumpkins, and fall activities in a family farm setting.",
-      link: "https://www.raleighmomclub.com/events/fall-season-at-naylor-family-farm-corn-maze-and-pumpkin-patch", linkLabel: "Event info →" },
-    { cat: "play", name: "Baby & Toddler Item Swap", start: "2026-10-10T10:00", end: "2026-10-10T12:00", time: "10am–12pm", loc: "North Regional Library, Durham", cost: "Free",
-      desc: "Donate gently used baby and toddler items and take home what you need.",
-      link: "https://www.raleighmomclub.com/events/baby-toddler-item-swap-dcl-17741163", linkLabel: "Event info →" },
-    { cat: "play", name: "Teen DIY Faux Stain-Glass", start: "2026-10-10T14:00", end: "2026-10-10T15:00", time: "2–3pm", loc: "Wendell Community Library, Wendell", cost: "Free",
-      desc: "Creative arts program for teens with faux stained glass craft.",
-      link: "https://www.raleighmomclub.com/events/teen-diy-faux-stain-glass-wg-b7e81a08", linkLabel: "Event info →" },
-    { cat: "play", name: "Family Fun Day", start: "2026-10-10T11:00", end: "2026-10-10T14:00", time: "11am–2pm", loc: "City of Raleigh Museum (COR Museum), Raleigh", cost: "Not published — confirm via link",
-      desc: "Family activities at the local history museum.",
-      link: "https://www.raleighmomclub.com/events/family-fun-day-at-urban-air-raleigh", linkLabel: "Event info →" },
-    { cat: "play", name: "Trick-or-Eat Food Truck Rodeo / Garner Night Out / Touch-a-Truck", start: "2026-10-10T17:00", end: "2026-10-10T21:00", time: "5–9pm", loc: "Downtown Garner, Garner", cost: "Free",
-      desc: "Food trucks, entertainment, and kids' activities in downtown Garner.",
-      link: "https://www.raleighmomclub.com/events/trick-or-eat-food-truck-rodeogarner-night-out-touc-vr-103058", linkLabel: "Event info →" }
+    { cat: "festival", name: "Halloween Boo Bash", start: "2026-10-17T14:00", end: "2026-10-17T18:00", time: "2–6pm", loc: "Downtown Wake Forest, Wake Forest", cost: "Free",
+      desc: "Halloween-themed community celebration with trick-or-treating and family activities.",
+      link: "https://www.wakeforest.org/events", linkLabel: "Event info →" },
+    { cat: "festival", name: "Tappin' the Gourd Pumpkin Extravaganza", start: "2026-10-17T14:00", end: "2026-10-17T20:00", time: "2–8pm", loc: "Tap Yard House, Raleigh", cost: "Free",
+      desc: "Pumpkin festival with live music (6pm onwards), food, and family activities.",
+      link: "https://raleighmomclub.com/events/tappin-the-gourd-pumpkin-extravaganza-vr-103047", linkLabel: "Event info →" },
+    { cat: "play", name: "Triangle Children's Business Fair at Knightdale Station Park", start: "2026-10-17T10:00", end: "2026-10-17T14:00", time: "10am–2pm", loc: "810 N First Ave, Knightdale", cost: "$25",
+      desc: "Young entrepreneurs showcase their businesses; great for ages 6–14 to learn about entrepreneurship.",
+      link: "https://raleighmomclub.com/events/triangle-childrens-business-fair-at-knightdale-station-park-oct-17", linkLabel: "Event info →" },
+    { cat: "festival", name: "Gather at Grace: Fall Festival with Free Cookout", start: "2026-10-17T11:30", end: "2026-10-17T14:30", time: "11:30am–2:30pm", loc: "Grace Lutheran Church, Durham", cost: "Free",
+      desc: "Fall festival with free cookout, games, and activities for families.",
+      link: "https://raleighmomclub.com/events/gather-at-grace-fall-festival-with-free-cookout-at-grace-lutheran-church-in-durham", linkLabel: "Event info →" }
   ]
 
   const SUNDAY = [
-    { cat: "play", name: "Jazz'd Up Sundays: Free Concert Series", start: "2026-10-11T18:30", end: "2026-10-11T20:00", time: "6:30–8pm", loc: "Downtown Cary Park, Cary", cost: "Free",
-      desc: "Free outdoor jazz concert for all ages — bring chairs and your own food.",
-      link: "https://www.raleighmomclub.com/events/jazzd-up-sundays", linkLabel: "Event info →" },
-    { cat: "market", name: "Raleigh Underground Market", start: "2026-10-11T11:00", end: "2026-10-11T15:00", time: "11am–3pm", loc: "Midtown Park, North Hills, Raleigh", cost: "Free",
-      desc: "Monthly market with 40+ local makers, a live band, and a food truck rodeo.",
-      link: "https://www.raleighmomclub.com/events/raleigh-underground-market-vr-103715", linkLabel: "Event info →" },
-    { cat: "festival", name: "Fall Festival at Highland United Methodist Church", start: "2026-10-11T16:00", end: "2026-10-11T18:00", time: "4–6pm", loc: "Highland United Methodist Church, Raleigh", cost: "Free",
-      desc: "Fall festival with activities for families; bring canned goods for Interfaith Food Shuttle.",
-      link: "https://www.raleighmomclub.com/events/fall-festival-at-highland-united-methodist-church-totc-370942", linkLabel: "Event info →" }
+    { cat: "play", name: "Instrument Petting Zoo", start: "2026-10-18T14:00", end: "2026-10-18T16:00", time: "2–4pm", loc: "Gipson Play Plaza, Raleigh", cost: "Free",
+      desc: "Hands-on musical instrument exploration — no experience necessary.",
+      link: "https://raleighmomclub.com/events/instrument-petting-zoo-october", linkLabel: "Event info →" },
+    { cat: "play", name: "Fall Festival at Summit Church in Knightdale", start: "2026-10-18T12:15", end: "2026-10-18T14:15", time: "12:15–2:15pm", loc: "Summit Church, Knightdale", cost: "Free",
+      desc: "Fall festival with games, activities, and food for families.",
+      link: "https://raleighmomclub.com/events/fall-festival-at-summit-church-in-knightdale-oct-18", linkLabel: "Event info →" }
   ]
 
   // NC State sports + NC State Latinx Alumni Network events over the NEXT
@@ -531,15 +525,21 @@
   // appear, even if a date falls within this week's Fri/Sat/Sun. Never also
   // add one to FRIDAY/SATURDAY/SUNDAY above.
   const NC_STATE_AHEAD = [
-    { cat: "wolfpack", name: "NC State Volleyball vs. Syracuse", date: "Fri, Oct 9", start: "2026-10-09T19:00", end: "2026-10-09T21:00", time: "7pm", loc: "Reynolds Coliseum, NC State", cost: "Not published — confirm via link",
-      desc: "Home conference match at Valvano Arena.",
+    { cat: "wolfpack", name: "NC State Women's Volleyball vs. Wake Forest", date: "Sun, Oct 18", start: "2026-10-18T16:00", end: "2026-10-18T18:00", time: "4pm", loc: "James T. Valvano Arena, Reynolds Coliseum, Raleigh", cost: "Free admission",
+      desc: "Home ACC volleyball match on Sunday afternoon.",
       link: "https://gopack.com/sports/womens-volleyball/schedule", linkLabel: "Schedule →", preReg: false },
-    { cat: "wolfpack", name: "NC State Men's Soccer vs. #4 UMKC", date: "Sun, Oct 11", start: "2026-10-11T18:00", end: "2026-10-11T20:00", time: "6pm", loc: "Dail Soccer Field, NC State", cost: "Not published — confirm via link",
-      desc: "Home match against a ranked UMKC side on a Sunday evening.",
+    { cat: "wolfpack", name: "NC State Men's Soccer vs. Stanford", date: "Sun, Oct 18", start: "2026-10-18T17:00", end: "2026-10-18T19:00", time: "5pm", loc: "Dail Soccer Field, NC State, Raleigh", cost: "Free admission",
+      desc: "Home match — SENIOR NIGHT & HALLOWEEN NIGHT with fun team traditions.",
       link: "https://gopack.com/sports/mens-soccer/schedule", linkLabel: "Schedule →", preReg: false },
-    { cat: "wolfpack", name: "NC State Latinx Alumni Network — Día de los Muertos Welcome Reception", date: "Thu, Oct 29", start: "2026-10-29T18:30", end: "2026-10-29T21:30", time: "6:30–9:30pm", loc: "Cuya Cafe + Cocina, Raleigh", cost: "Not published — confirm via link",
-      desc: "Kickoff of NC State Homecoming Weekend 2026 for the Latinx Alumni Network.",
-      link: "https://www.instagram.com/p/DdzZMOij-9X/", linkLabel: "Event post →", preReg: true }
+    { cat: "wolfpack", name: "NC State Women's Volleyball vs. SMU", date: "Sun, Oct 25", start: "2026-10-25T13:00", end: "2026-10-25T15:00", time: "1pm", loc: "James T. Valvano Arena, Reynolds Coliseum, Raleigh", cost: "Free admission",
+      desc: "Home ACC volleyball match.",
+      link: "https://gopack.com/sports/womens-volleyball/schedule", linkLabel: "Schedule →", preReg: false },
+    { cat: "wolfpack", name: "NC State Women's Volleyball vs. Pitt", date: "Fri, Oct 30", start: "2026-10-30T19:00", end: "2026-10-30T21:00", time: "7pm", loc: "James T. Valvano Arena, Reynolds Coliseum, Raleigh", cost: "Free admission",
+      desc: "Home ACC volleyball match.",
+      link: "https://gopack.com/sports/womens-volleyball/schedule", linkLabel: "Schedule →", preReg: false },
+    { cat: "wolfpack", name: "NC State Football vs. California — Homecoming", date: "Sat, Oct 31", start: "2026-10-31T19:00", end: "2026-10-31T22:00", time: "7pm (TBA)", loc: "Carter-Finley Stadium, Raleigh", cost: "Check link for pricing",
+      desc: "Homecoming game with pre-game festivities and tailgate events.",
+      link: "https://gopack.com/sports/football/schedule", linkLabel: "Schedule →", preReg: false }
   ];
 
   const TZ_OFFSET = "-04:00";
