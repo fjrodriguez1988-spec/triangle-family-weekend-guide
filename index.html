@@ -473,66 +473,48 @@
   // FRIDAY/SATURDAY/SUNDAY below, even if the date matches — they only ever
   // appear in NC_STATE_AHEAD further down, cat: "wolfpack".
   const FRIDAY = [
-    { cat: "farm", name: "Hidwell Family Farm's Pumpkin Patch and Barrel Train Rides", start: "2026-10-16T16:00", end: "2026-10-16T19:00", time: "4–7pm", loc: "Hidwell Family Farm, Apex", cost: "$7",
-      desc: "Admission includes a small pumpkin or mum, plus the barrel train touring the farm.",
-      link: "https://raleighmomclub.com/events/hidwell-family-farms-pumpkin-patch-and-barrell-train-rides", linkLabel: "Event info →" },
-    { cat: "festival", name: "The Witch's Haunted Barn | Not So Scary (No-Actor Days)", start: "2026-10-16T12:00", end: "2026-10-16T17:00", time: "12–5pm", loc: "Firefly Farm, Hillsborough", cost: "$13",
-      desc: "Family-friendly haunted barn perfect for kids in Halloween costumes.",
-      link: "https://raleighmomclub.com/events/the-witchs-haunted-barn", linkLabel: "Event info →" },
-    { cat: "farm", name: "Page Farms Pumpkin Picking", start: "2026-10-16T09:00", end: "2026-10-16T18:00", time: "9am–6pm", loc: "6100 Mt. Herman Rd., Raleigh", cost: "$14",
+    { cat: "farm", name: "NC State Fair", start: "2026-10-23T09:00", end: "2026-10-23T23:30", time: "9am–11:30pm", loc: "4285 Trinity Rd., Raleigh", cost: "$13 adults, $7 ages 6–12, $5 seniors, free ages 5 and under",
+      desc: "State fair with rides, games, food, and entertainment for all ages.",
+      link: "https://www.ncagr.gov/divisions/ncstatefair/buy-tickets-now", linkLabel: "Event info →" },
+    { cat: "farm", name: "Page Farms Pumpkin Picking", start: "2026-10-23T09:00", end: "2026-10-23T18:00", time: "9am–6pm", loc: "6100 Mt. Herman Rd., Raleigh", cost: "$14",
       desc: "U-pick pumpkins and fall decorations in a family-friendly farm setting.",
       link: "https://raleighmomclub.com/events/page-farms-pumpkin-picking", linkLabel: "Event info →" },
-    { cat: "farm", name: "Hill Ridge Farms Fall Pumpkin Festival", start: "2026-10-16T09:30", end: "2026-10-16T18:30", time: "9:30am–6:30pm", loc: "703 Tarboro Road, Youngsville", cost: "$24.95",
+    { cat: "farm", name: "Hill Ridge Farms Fall Pumpkin Festival", start: "2026-10-23T09:30", end: "2026-10-23T18:30", time: "9:30am–6:30pm", loc: "703 Tarboro Road, Youngsville", cost: "$24.95",
       desc: "Fall festival with pumpkins, hayrides, and family activities at a local farm.",
       link: "https://www.hillridgefarms.com/harvest.php", linkLabel: "Event info →" },
-    { cat: "festival", name: "Paint the Parks Exhibit at Blue Jay Point County Park", start: "2026-10-16T08:00", end: "2026-10-16T18:30", time: "8am–6:30pm", loc: "3200 Pleasant Union Church Rd., Raleigh", cost: "Free",
-      desc: "Outdoor art exhibit and nature exploration at a scenic county park.",
-      link: "https://fun4raleighkids.com/calendar/eventdetail/191665/366/last-weekend-of-paint-the-parks-exhibit-at-blue-jay-point-county-park", linkLabel: "Event info →" },
-    { cat: "sports", name: "NC State Fair", start: "2026-10-16T09:00", end: "2026-10-16T23:30", time: "9am–11:30pm", loc: "1025 Blue Ridge Rd., Raleigh", cost: "$13 adults, $7 ages 6–12, $5 seniors, free ages 5 and under",
-      desc: "State fair with rides, games, food, and entertainment for all ages.",
-      link: "https://www.ncagr.gov/divisions/nc-state-fair/nc-state-fair-buy-tickets-now", linkLabel: "Event info →" },
-    { cat: "festival", name: "Ponder Parade of Homes 2026", start: "2026-10-16T12:00", end: "2026-10-16T17:00", time: "12–5pm", loc: "312 Spotted Turtle Trail, Wendell", cost: "Free",
-      desc: "Self-guided tour of new homes in the Ponder community.",
-      link: "https://thetriangleweekender.com/event/parade-of-homes-coming-to-ponder/2026-10-04/", linkLabel: "Tour info →" }
+    { cat: "play", name: "Fall Fun at Grasshopper Farm", start: "2026-10-23T10:00", end: "2026-10-23T18:00", time: "10am–6pm", loc: "8004 Poole Rd., Knightdale", cost: "Free",
+      desc: "Free admission to a 4-acre corn maze, mini maze for little ones, play structure, bounce house and pumpkin patch. Hayrides run 11am–4pm.",
+      link: "https://fun4raleighkids.com/calendar/eventdetail/194186/290/fall-fun-at-grasshopper-farm", linkLabel: "Event info →" },
+    { cat: "festival", name: "Trunk or Treat", start: "2026-10-23T18:00", end: "2026-10-23T20:00", time: "6–8pm", loc: "Koka Booth Amphitheatre, Cary", cost: "Free",
+      desc: "Halloween trick-or-treating event with decorated car trunks.",
+      link: "https://raleighmomclub.com/events/trunk-or-treat-vr-111266", linkLabel: "Event info →" }
   ]
 
   const SATURDAY = [
-    { cat: "festival", name: "Tappin' the Gourd Pumpkin Extravaganza", start: "2026-10-17T18:00", end: "2026-10-17T21:00", time: "Live bluegrass 6–9pm", loc: "Tap Yard Raleigh, 1610 Automotive Way, Raleigh", cost: "Free",
-      desc: "Tap Yard's annual pumpkin beer festival, family friendly during the day, with live bluegrass from Counterclockwise String Band.",
-      link: "https://allevents.in/raleigh/counterclockwise-string-band-live-tappin-the-gourd/100002002477058788", linkLabel: "Event info →" },
-    { cat: "festival", name: "Gather at Grace: Fall Festival with Free Cookout", start: "2026-10-17T11:30", end: "2026-10-17T14:30", time: "11:30am–2:30pm", loc: "Grace Evangelical Lutheran Church, 824 N Buchanan Blvd, Durham", cost: "Free",
-      desc: "Fall festival with free cookout, games, and activities for families.",
-      link: "https://www.gracedurham.org/news", linkLabel: "Event info →" },
-    { cat: "farm", name: "Fall Fun at Grasshopper Farm", start: "2026-10-17T09:00", end: "2026-10-17T19:00", time: "9am–7pm", loc: "8004 Poole Rd., Knightdale", cost: "Free",
+    { cat: "farm", name: "NC State Fair", start: "2026-10-24T09:00", end: "2026-10-24T23:30", time: "9am–11:30pm", loc: "4285 Trinity Rd., Raleigh", cost: "$13 adults, $7 ages 6–12, $5 seniors, free ages 5 and under",
+      desc: "State fair with rides, games, food, and entertainment for all ages.",
+      link: "https://www.ncagr.gov/divisions/ncstatefair/buy-tickets-now", linkLabel: "Event info →" },
+    { cat: "festival", name: "Spellbound at Mordecai", start: "2026-10-24T10:00", end: "2026-10-24T14:00", time: "10am–2pm", loc: "Mordecai Historic Park, 1 Mimosa St., Raleigh", cost: "Free",
+      desc: "Family Halloween event with activities and tours at historic Mordecai house.",
+      link: "https://raleighmomclub.com/events/spellbound-at-mordecai-2026-10-24", linkLabel: "Event info →" },
+    { cat: "play", name: "Fall Fun at Grasshopper Farm", start: "2026-10-24T10:00", end: "2026-10-24T18:00", time: "10am–6pm", loc: "8004 Poole Rd., Knightdale", cost: "Free",
       desc: "Free admission to a 4-acre corn maze, mini maze for little ones, play structure, bounce house and pumpkin patch. Hayrides run 11am–4pm.",
       link: "https://fun4raleighkids.com/calendar/eventdetail/194186/290/fall-fun-at-grasshopper-farm", linkLabel: "Event info →" },
-    { cat: "festival", name: "Northern Wake Fire Auxiliary's Fall Festival", start: "2026-10-17T10:00", end: "2026-10-17T15:00", time: "10am–3pm", loc: "7045 Stony Hill Rd., Wake Forest", cost: "Free",
+    { cat: "festival", name: "Northern Wake Fire Auxiliary's Fall Festival", start: "2026-10-24T10:00", end: "2026-10-24T15:00", time: "10am–3pm", loc: "7045 Stony Hill Rd., Wake Forest", cost: "Free",
       desc: "Pumpkin patch, kids' zone, Touch-a-Truck, public safety day, food and craft vendors.",
       link: "https://fun4raleighkids.com/calendar/eventdetail/143068/290/northern-wake-fire-auxilliary-s-fall-festival", linkLabel: "Event info →" },
-    { cat: "festival", name: "Pets and Pumpkins at Moore Square", start: "2026-10-17T11:00", end: "2026-10-17T15:00", time: "11am–3pm", loc: "Moore Square, 201 S. Blount St., Raleigh", cost: "Free",
-      desc: "Grand opening of Moore Square's new dog park with a pet pumpkin patch, free crafts, storytime at 1pm and a costumed pet parade at 2pm.",
-      link: "https://fun4raleighkids.com/calendar/eventdetail/195739/290/pets-and-pumpkins-at-moore-square", linkLabel: "Event info →" },
-    { cat: "play", name: "FRESH Family Day at Artspace", start: "2026-10-17T11:00", end: "2026-10-17T15:00", time: "11am–3pm", loc: "Artspace, 201 E. Davie St., Raleigh", cost: "Free",
+    { cat: "play", name: "FRESH Family Day at Artspace", start: "2026-10-24T11:00", end: "2026-10-24T15:00", time: "11am–3pm", loc: "Artspace, 201 E. Davie St., Raleigh", cost: "Free",
       desc: "Hands-on artist demos and an all-ages art activity, indoors. Registration not required.",
-      link: "https://fun4raleighkids.com/calendar/eventdetail/194198/290/fresh-family-day-at-artspace", linkLabel: "Event info →" },
-    { cat: "festival", name: "Bull City BOOs Fest", start: "2026-10-17T16:00", end: "2026-10-17T23:00", time: "4–11pm", loc: "Durham Central Park, 501 Foster St., Durham", cost: "Ticketed — confirm price via link",
-      desc: "Halloween festival with a Harry Potter-themed kids' zone, performances, and local breweries.",
-      link: "https://www.eventeny.com/events/2026-bull-city-boos-fest-29101/", linkLabel: "Event info →" },
-    { cat: "festival", name: "Diwali Festival at Morrisville Community Park", start: "2026-10-17T17:00", end: "2026-10-17T20:00", time: "5–8pm", loc: "1520 Morrisville Pkwy., Morrisville", cost: "Free",
-      desc: "Cultural performances, diya and mandala painting crafts, a live DJ, and food trucks.",
-      link: "https://fun4raleighkids.com/calendar/eventdetail/194016/290/diwali-festival-at-morrisville-community-park", linkLabel: "Event info →" }
+      link: "https://fun4raleighkids.com/calendar/eventdetail/194198/290/fresh-family-day-at-artspace", linkLabel: "Event info →" }
   ]
 
   const SUNDAY = [
-    { cat: "play", name: "Instrument Petting Zoo", start: "2026-10-18T14:00", end: "2026-10-18T16:00", time: "2–4pm", loc: "Gipson Play Plaza, Dix Park, Raleigh", cost: "Free", preReg: true,
-      desc: "Hands-on musical instrument exploration — no experience necessary.",
-      link: "https://dixpark.org/node/7098", linkLabel: "Event info →" },
-    { cat: "play", name: "Fall Festival at Summit Church in Knightdale", start: "2026-10-18T12:15", end: "2026-10-18T14:15", time: "12:15–2:15pm", loc: "Knightdale High School, 100 Bryan Chalk Ln, Knightdale", cost: "Free",
-      desc: "Fall festival with games, activities, and food for families.",
-      link: "https://triangleonthecheap.com/fall-festival-summit-church/", linkLabel: "Event info →" },
-    { cat: "festival", name: "Wilson Hispanic Heritage Festival", start: "2026-10-18T13:00", end: "2026-10-18T19:00", time: "1–7pm", loc: "Whirligig Park, Downtown Wilson (about an hour east of Raleigh)", cost: "Free",
-      desc: "Free community celebration hosted by the Wilson Police Department with live norteño music, food trucks, kids activities, local vendors, and raffles.",
-      link: "https://www.facebook.com/share/p/1LtCRe3NZH/", linkLabel: "Event info →" }
+    { cat: "farm", name: "NC State Fair", start: "2026-10-25T09:00", end: "2026-10-25T23:30", time: "9am–11:30pm", loc: "4285 Trinity Rd., Raleigh", cost: "$13 adults, $7 ages 6–12, $5 seniors, free ages 5 and under",
+      desc: "State fair with rides, games, food, and entertainment for all ages.",
+      link: "https://www.ncagr.gov/divisions/ncstatefair/buy-tickets-now", linkLabel: "Event info →" },
+    { cat: "play", name: "Fall Fun at Grasshopper Farm", start: "2026-10-25T10:00", end: "2026-10-25T18:00", time: "10am–6pm", loc: "8004 Poole Rd., Knightdale", cost: "Free",
+      desc: "Free admission to a 4-acre corn maze, mini maze for little ones, play structure, bounce house and pumpkin patch. Hayrides run 11am–4pm.",
+      link: "https://fun4raleighkids.com/calendar/eventdetail/194186/290/fall-fun-at-grasshopper-farm", linkLabel: "Event info →" }
   ]
 
   // NC State sports + NC State Latinx Alumni Network events over the NEXT
