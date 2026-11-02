@@ -473,48 +473,36 @@
   // FRIDAY/SATURDAY/SUNDAY below, even if the date matches — they only ever
   // appear in NC_STATE_AHEAD further down, cat: "wolfpack".
   const FRIDAY = [
-    { cat: "farm", name: "NC State Fair", start: "2026-10-23T09:00", end: "2026-10-23T23:30", time: "9am–11:30pm", loc: "4285 Trinity Rd., Raleigh", cost: "$13 adults, $7 ages 6–12, $5 seniors, free ages 5 and under",
-      desc: "State fair with rides, games, food, and entertainment for all ages.",
-      link: "https://www.ncagr.gov/divisions/ncstatefair/buy-tickets-now", linkLabel: "Event info →" },
-    { cat: "farm", name: "Page Farms Pumpkin Picking", start: "2026-10-23T09:00", end: "2026-10-23T18:00", time: "9am–6pm", loc: "6100 Mt. Herman Rd., Raleigh", cost: "$14",
-      desc: "U-pick pumpkins and fall decorations in a family-friendly farm setting.",
-      link: "https://raleighmomclub.com/events/page-farms-pumpkin-picking", linkLabel: "Event info →" },
-    { cat: "farm", name: "Hill Ridge Farms Fall Pumpkin Festival", start: "2026-10-23T09:30", end: "2026-10-23T18:30", time: "9:30am–6:30pm", loc: "703 Tarboro Road, Youngsville", cost: "$24.95",
-      desc: "Fall festival with pumpkins, hayrides, and family activities at a local farm.",
-      link: "https://www.hillridgefarms.com/harvest.php", linkLabel: "Event info →" },
-    { cat: "play", name: "Fall Fun at Grasshopper Farm", start: "2026-10-23T10:00", end: "2026-10-23T18:00", time: "10am–6pm", loc: "8004 Poole Rd., Knightdale", cost: "Free",
-      desc: "Free admission to a 4-acre corn maze, mini maze for little ones, play structure, bounce house and pumpkin patch. Hayrides run 11am–4pm.",
-      link: "https://fun4raleighkids.com/calendar/eventdetail/194186/290/fall-fun-at-grasshopper-farm", linkLabel: "Event info →" },
-    { cat: "festival", name: "Trunk or Treat", start: "2026-10-23T18:00", end: "2026-10-23T20:00", time: "6–8pm", loc: "Koka Booth Amphitheatre, Cary", cost: "Free",
-      desc: "Halloween trick-or-treating event with decorated car trunks.",
-      link: "https://raleighmomclub.com/events/trunk-or-treat-vr-111266", linkLabel: "Event info →" }
+    { cat: "play", name: "Fenton Skate the Square - First Weekend", start: "2026-11-06T08:00", end: "2026-11-06T21:00", time: "All day (skating 3am–9pm)", loc: "Fenton area, Cary", cost: "$18",
+      desc: "Ice skating and family fun at the new Fenton outdoor skate square.",
+      link: "https://raleighmomclub.com/events/first-weekend-for-fenton-skate-the-square", linkLabel: "Event info →" },
+    { cat: "market", name: "The Market at NCMA", start: "2026-11-06T11:00", end: "2026-11-06T16:00", time: "11am–4pm", loc: "North Carolina Museum of Art, Raleigh", cost: "Free",
+      desc: "Local vendors, crafts, food, and family activities at the museum entrance.",
+      link: "https://raleighmomclub.com/events/the-market-at-ncma", linkLabel: "Event info →" },
+    { cat: "play", name: "Cirque de Paris", start: "2026-11-06T14:00", end: "2026-11-06T16:00", time: "Various showtimes", loc: "Triangle Town Center, Raleigh", cost: "$14.99 - $59.99",
+      desc: "Spectacular circus performance with acrobats, aerial acts, and family-friendly entertainment.",
+      link: "https://raleighmomclub.com/events/cirque-anouchka-buoglione-presents-cirque-de-paris-at-triangle-town", linkLabel: "Event info →", preReg: true }
   ]
 
   const SATURDAY = [
-    { cat: "farm", name: "NC State Fair", start: "2026-10-24T09:00", end: "2026-10-24T23:30", time: "9am–11:30pm", loc: "4285 Trinity Rd., Raleigh", cost: "$13 adults, $7 ages 6–12, $5 seniors, free ages 5 and under",
-      desc: "State fair with rides, games, food, and entertainment for all ages.",
-      link: "https://www.ncagr.gov/divisions/ncstatefair/buy-tickets-now", linkLabel: "Event info →" },
-    { cat: "festival", name: "Spellbound at Mordecai", start: "2026-10-24T10:00", end: "2026-10-24T14:00", time: "10am–2pm", loc: "Mordecai Historic Park, 1 Mimosa St., Raleigh", cost: "Free",
-      desc: "Family Halloween event with activities and tours at historic Mordecai house.",
-      link: "https://raleighmomclub.com/events/spellbound-at-mordecai-2026-10-24", linkLabel: "Event info →" },
-    { cat: "play", name: "Fall Fun at Grasshopper Farm", start: "2026-10-24T10:00", end: "2026-10-24T18:00", time: "10am–6pm", loc: "8004 Poole Rd., Knightdale", cost: "Free",
-      desc: "Free admission to a 4-acre corn maze, mini maze for little ones, play structure, bounce house and pumpkin patch. Hayrides run 11am–4pm.",
-      link: "https://fun4raleighkids.com/calendar/eventdetail/194186/290/fall-fun-at-grasshopper-farm", linkLabel: "Event info →" },
-    { cat: "festival", name: "Northern Wake Fire Auxiliary's Fall Festival", start: "2026-10-24T10:00", end: "2026-10-24T15:00", time: "10am–3pm", loc: "7045 Stony Hill Rd., Wake Forest", cost: "Free",
-      desc: "Pumpkin patch, kids' zone, Touch-a-Truck, public safety day, food and craft vendors.",
-      link: "https://fun4raleighkids.com/calendar/eventdetail/143068/290/northern-wake-fire-auxilliary-s-fall-festival", linkLabel: "Event info →" },
-    { cat: "play", name: "FRESH Family Day at Artspace", start: "2026-10-24T11:00", end: "2026-10-24T15:00", time: "11am–3pm", loc: "Artspace, 201 E. Davie St., Raleigh", cost: "Free",
-      desc: "Hands-on artist demos and an all-ages art activity, indoors. Registration not required.",
-      link: "https://fun4raleighkids.com/calendar/eventdetail/194198/290/fresh-family-day-at-artspace", linkLabel: "Event info →" }
+    { cat: "market", name: "The Market at NCMA", start: "2026-11-07T11:00", end: "2026-11-07T16:00", time: "11am–4pm", loc: "North Carolina Museum of Art, Raleigh", cost: "Free",
+      desc: "Local vendors, crafts, food, and family activities at the museum entrance.",
+      link: "https://raleighmomclub.com/events/the-market-at-ncma", linkLabel: "Event info →" },
+    { cat: "festival", name: "Bleeding Disorders Foundation Family Festival & Walk", start: "2026-11-07T11:00", end: "2026-11-07T14:00", time: "11am–2pm", loc: "Lake Crabtree County Park, Morrisville", cost: "$10 adults, children free",
+      desc: "Family fun, games, activities, and awareness walk supporting bleeding disorder organizations.",
+      link: "https://raleighmomclub.com/events/bleeding-disorders-foundation-of-north-carolina-family-festival-and", linkLabel: "Event info →" },
+    { cat: "play", name: "Cirque de Paris", start: "2026-11-07T14:00", end: "2026-11-07T16:00", time: "Various showtimes", loc: "Triangle Town Center, Raleigh", cost: "$14.99 - $59.99",
+      desc: "Spectacular circus performance with acrobats, aerial acts, and family-friendly entertainment.",
+      link: "https://raleighmomclub.com/events/cirque-anouchka-buoglione-presents-cirque-de-paris-at-triangle-town", linkLabel: "Event info →", preReg: true }
   ]
 
   const SUNDAY = [
-    { cat: "farm", name: "NC State Fair", start: "2026-10-25T09:00", end: "2026-10-25T23:30", time: "9am–11:30pm", loc: "4285 Trinity Rd., Raleigh", cost: "$13 adults, $7 ages 6–12, $5 seniors, free ages 5 and under",
-      desc: "State fair with rides, games, food, and entertainment for all ages.",
-      link: "https://www.ncagr.gov/divisions/ncstatefair/buy-tickets-now", linkLabel: "Event info →" },
-    { cat: "play", name: "Fall Fun at Grasshopper Farm", start: "2026-10-25T10:00", end: "2026-10-25T18:00", time: "10am–6pm", loc: "8004 Poole Rd., Knightdale", cost: "Free",
-      desc: "Free admission to a 4-acre corn maze, mini maze for little ones, play structure, bounce house and pumpkin patch. Hayrides run 11am–4pm.",
-      link: "https://fun4raleighkids.com/calendar/eventdetail/194186/290/fall-fun-at-grasshopper-farm", linkLabel: "Event info →" }
+    { cat: "market", name: "The Market at NCMA", start: "2026-11-08T11:00", end: "2026-11-08T16:00", time: "11am–4pm", loc: "North Carolina Museum of Art, Raleigh", cost: "Free",
+      desc: "Local vendors, crafts, food, and family activities at the museum entrance.",
+      link: "https://raleighmomclub.com/events/the-market-at-ncma", linkLabel: "Event info →" },
+    { cat: "play", name: "Cirque de Paris", start: "2026-11-08T14:00", end: "2026-11-08T16:00", time: "Various showtimes (Final day)", loc: "Triangle Town Center, Raleigh", cost: "$14.99 - $59.99",
+      desc: "Last day for spectacular circus performance with acrobats, aerial acts, and family-friendly entertainment.",
+      link: "https://raleighmomclub.com/events/cirque-anouchka-buoglione-presents-cirque-de-paris-at-triangle-town", linkLabel: "Event info →", preReg: true }
   ]
 
   // NC State sports + NC State Latinx Alumni Network events over the NEXT
@@ -522,36 +510,6 @@
   // appear, even if a date falls within this week's Fri/Sat/Sun. Never also
   // add one to FRIDAY/SATURDAY/SUNDAY above.
   const NC_STATE_AHEAD = [
-    { cat: "wolfpack", name: "NC State Women's Volleyball vs. Wake Forest", date: "Fri, Oct 23", start: "2026-10-23T18:00", end: "2026-10-23T20:00", time: "6pm", loc: "James T. Valvano Arena, Reynolds Coliseum, Raleigh", cost: "Not published — confirm via link",
-      desc: "Home ACC volleyball match.",
-      link: "https://gopack.com/sports/womens-volleyball/schedule", linkLabel: "Schedule →", preReg: false },
-    { cat: "wolfpack", name: "NC State Men's Basketball vs. Lenoir-Rhyne (Exhibition)", date: "Sat, Oct 24", start: "2026-10-24T12:00", end: "2026-10-24T14:00", time: "12pm", loc: "Lenovo Center, Raleigh", cost: "Not published — confirm via link",
-      desc: "Home exhibition game to kick off basketball season.",
-      link: "https://gopack.com/sports/mens-basketball/schedule", linkLabel: "Schedule →", preReg: false },
-    { cat: "wolfpack", name: "NC State Women's Basketball vs. UNCW (Exhibition)", date: "Sat, Oct 24", start: "2026-10-24T15:00", end: "2026-10-24T17:00", time: "3pm", loc: "James T. Valvano Arena, Reynolds Coliseum, Raleigh", cost: "Not published — confirm via link",
-      desc: "Home exhibition game.",
-      link: "https://gopack.com/sports/womens-basketball/schedule", linkLabel: "Schedule →", preReg: false },
-    { cat: "wolfpack", name: "NC State Men's Soccer vs. Stanford", date: "Sat, Oct 24", start: "2026-10-24T18:00", end: "2026-10-24T20:00", time: "6pm", loc: "Dail Soccer Field, NC State, Raleigh", cost: "Not published — confirm via link",
-      desc: "Home ACC match, Senior Night and Halloween Night.",
-      link: "https://gopack.com/sports/mens-soccer/schedule", linkLabel: "Schedule →", preReg: false },
-    { cat: "wolfpack", name: "NC State Latinx Alumni Network: Día de los Muertos Welcome Reception", date: "Thu, Oct 29", start: "2026-10-29T18:30", end: "2026-10-29T21:30", time: "6:30–9:30pm", loc: "Cuya Cafe + Cocina, Raleigh", cost: "Not published — confirm via link",
-      desc: "Kickoff of Latinx Alumni Network Homecoming Weekend. RSVP through the network's Linktree.",
-      link: "https://www.instagram.com/p/DdzZMOij-9X/", linkLabel: "Event info →", preReg: true },
-    { cat: "wolfpack", name: "NC State Women's Volleyball vs. SMU", date: "Fri, Oct 30", start: "2026-10-30T19:00", end: "2026-10-30T21:00", time: "7pm", loc: "James T. Valvano Arena, Reynolds Coliseum, Raleigh", cost: "Not published — confirm via link",
-      desc: "Home ACC volleyball match.",
-      link: "https://gopack.com/sports/womens-volleyball/schedule", linkLabel: "Schedule →", preReg: false },
-    { cat: "wolfpack", name: "NC State Football vs. California — Homecoming", date: "Sat, Oct 31", start: "2026-10-31T12:00", end: "2026-10-31T14:00", time: "Time TBA", loc: "Carter-Finley Stadium, Raleigh", cost: "Not published — confirm via link",
-      desc: "Homecoming game with pre-game festivities and tailgate events. Kickoff time not yet announced.",
-      link: "https://gopack.com/sports/football/schedule", linkLabel: "Schedule →", preReg: false },
-    { cat: "wolfpack", name: "NC State Latinx Alumni Network: Homecoming Tailgate", date: "Sat, Oct 31", start: "2026-10-31T17:30", end: "2026-10-31T20:00", time: "5:30–8pm", loc: "The Local, Raleigh", cost: "Not published — confirm via link",
-      desc: "Pre-game meal with fellow Latinx alumni before the Homecoming game vs. California. RSVP through the network's Linktree.",
-      link: "https://www.instagram.com/p/DdzZMOij-9X/", linkLabel: "Event info →", preReg: true },
-    { cat: "wolfpack", name: "NC State Latinx Alumni Network: Farewell Brunch", date: "Sun, Nov 1", start: "2026-11-01T11:00", end: "2026-11-01T14:00", time: "11am–2pm", loc: "Lobera Tacos & Tequila, Raleigh", cost: "Not published — confirm via link",
-      desc: "Closing brunch for Latinx Alumni Network Homecoming Weekend. RSVP through the network's Linktree.",
-      link: "https://www.instagram.com/p/DdzZMOij-9X/", linkLabel: "Event info →", preReg: true },
-    { cat: "wolfpack", name: "NC State Women's Volleyball vs. Pitt", date: "Sun, Nov 1", start: "2026-11-01T13:00", end: "2026-11-01T15:00", time: "1pm", loc: "James T. Valvano Arena, Reynolds Coliseum, Raleigh", cost: "Not published — confirm via link",
-      desc: "Home ACC volleyball match.",
-      link: "https://gopack.com/sports/womens-volleyball/schedule", linkLabel: "Schedule →", preReg: false },
     { cat: "wolfpack", name: "NC State Women's Basketball vs. Wofford", date: "Mon, Nov 2", start: "2026-11-02T17:00", end: "2026-11-02T19:00", time: "5pm", loc: "James T. Valvano Arena, Reynolds Coliseum, Raleigh", cost: "Tickets from $31",
       desc: "Home season opener at Reynolds Coliseum.",
       link: "https://gopack.com/sports/womens-basketball/schedule", linkLabel: "Schedule →", preReg: false },
