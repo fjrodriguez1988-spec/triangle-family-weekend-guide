@@ -481,7 +481,10 @@
       link: "https://raleighmomclub.com/events/the-market-at-ncma", linkLabel: "Event info →" },
     { cat: "play", name: "Cirque de Paris", start: "2026-11-06T14:00", end: "2026-11-06T16:00", time: "Various showtimes", loc: "Triangle Town Center, Raleigh", cost: "$14.99 - $59.99",
       desc: "Spectacular circus performance with acrobats, aerial acts, and family-friendly entertainment.",
-      link: "https://raleighmomclub.com/events/cirque-anouchka-buoglione-presents-cirque-de-paris-at-triangle-town", linkLabel: "Event info →", preReg: true }
+      link: "https://raleighmomclub.com/events/cirque-anouchka-buoglione-presents-cirque-de-paris-at-triangle-town", linkLabel: "Event info →", preReg: true },
+    { cat: "festival", name: "10th Annual Dia De Los Muertos", start: "2026-11-06T18:30", end: "2026-11-06T21:00", time: "6:30–9pm", loc: "City of Raleigh Museum (COR Museum), Raleigh", cost: "Free",
+      desc: "Music, dance, poetry, art, and traditional flavors celebrate the 10th Annual Día de los Muertos with performances, altar displays, and family activities.",
+      link: "https://raleighmomclub.com/events/10th-annual-dia-de-los-muertos", linkLabel: "Event info →" }
   ]
 
   const SATURDAY = [
@@ -493,7 +496,10 @@
       link: "https://raleighmomclub.com/events/bleeding-disorders-foundation-of-north-carolina-family-festival-and", linkLabel: "Event info →" },
     { cat: "play", name: "Cirque de Paris", start: "2026-11-07T14:00", end: "2026-11-07T16:00", time: "Various showtimes", loc: "Triangle Town Center, Raleigh", cost: "$14.99 - $59.99",
       desc: "Spectacular circus performance with acrobats, aerial acts, and family-friendly entertainment.",
-      link: "https://raleighmomclub.com/events/cirque-anouchka-buoglione-presents-cirque-de-paris-at-triangle-town", linkLabel: "Event info →", preReg: true }
+      link: "https://raleighmomclub.com/events/cirque-anouchka-buoglione-presents-cirque-de-paris-at-triangle-town", linkLabel: "Event info →", preReg: true },
+    { cat: "festival", name: "Celebrate Diwali at the Library!", start: "2026-11-07T10:00", end: "2026-11-07T11:00", time: "10am–11am", loc: "Southwest Regional Library – Southwest Meeting Room, Durham", cost: "Free",
+      desc: "Family-friendly celebration of Diwali with activities, crafts, and cultural sharing.",
+      link: "https://raleighmomclub.com/events/celebrate-diwali-at-the-library", linkLabel: "Event info →" }
   ]
 
   const SUNDAY = [
@@ -502,7 +508,10 @@
       link: "https://raleighmomclub.com/events/the-market-at-ncma", linkLabel: "Event info →" },
     { cat: "play", name: "Cirque de Paris", start: "2026-11-08T14:00", end: "2026-11-08T16:00", time: "Various showtimes (Final day)", loc: "Triangle Town Center, Raleigh", cost: "$14.99 - $59.99",
       desc: "Last day for spectacular circus performance with acrobats, aerial acts, and family-friendly entertainment.",
-      link: "https://raleighmomclub.com/events/cirque-anouchka-buoglione-presents-cirque-de-paris-at-triangle-town", linkLabel: "Event info →", preReg: true }
+      link: "https://raleighmomclub.com/events/cirque-anouchka-buoglione-presents-cirque-de-paris-at-triangle-town", linkLabel: "Event info →", preReg: true },
+    { cat: "play", name: "Teen Craft: Birdhouses!", start: "2026-11-08T14:00", end: "2026-11-08T15:00", time: "2pm–3pm", loc: "Duraleigh Road Community Library, Raleigh", cost: "Free",
+      desc: "Teen-focused craft activity building and decorating birdhouses.",
+      link: "https://raleighmomclub.com/events/teen-craft-birdhouses-wg-6f25a75d", linkLabel: "Event info →" }
   ]
 
   // NC State sports + NC State Latinx Alumni Network events over the NEXT
@@ -510,20 +519,14 @@
   // appear, even if a date falls within this week's Fri/Sat/Sun. Never also
   // add one to FRIDAY/SATURDAY/SUNDAY above.
   const NC_STATE_AHEAD = [
-    { cat: "wolfpack", name: "NC State Women's Basketball vs. Wofford", date: "Mon, Nov 2", start: "2026-11-02T17:00", end: "2026-11-02T19:00", time: "5pm", loc: "James T. Valvano Arena, Reynolds Coliseum, Raleigh", cost: "Tickets from $31",
-      desc: "Home season opener at Reynolds Coliseum.",
-      link: "https://gopack.com/sports/womens-basketball/schedule", linkLabel: "Schedule →", preReg: false },
-    { cat: "wolfpack", name: "NC State Men's Basketball vs. Campbell", date: "Mon, Nov 2", start: "2026-11-02T19:30", end: "2026-11-02T21:30", time: "7:30pm", loc: "Lenovo Center, Raleigh", cost: "Tickets from $15",
-      desc: "Home game at the Lenovo Center.",
-      link: "https://gopack.com/sports/mens-basketball/schedule", linkLabel: "Schedule →", preReg: false },
     { cat: "wolfpack", name: "NC State Women's Basketball vs. Campbell", date: "Wed, Nov 4", start: "2026-11-04T18:00", end: "2026-11-04T20:00", time: "6pm", loc: "James T. Valvano Arena, Reynolds Coliseum, Raleigh", cost: "Tickets from $31",
       desc: "Home game at Reynolds Coliseum.",
       link: "https://gopack.com/sports/womens-basketball/schedule", linkLabel: "Schedule →", preReg: false },
     { cat: "wolfpack", name: "NC State Men's Basketball vs. ETSU", date: "Fri, Nov 6", start: "2026-11-06T19:00", end: "2026-11-06T21:00", time: "7pm", loc: "Lenovo Center, Raleigh", cost: "Tickets from $25",
       desc: "Home game at the Lenovo Center.",
       link: "https://gopack.com/sports/mens-basketball/schedule", linkLabel: "Schedule →", preReg: false },
-    { cat: "wolfpack", name: "NC State Football vs. Duke — Military Appreciation", date: "Sat, Nov 7", start: "2026-11-07T12:00", end: "2026-11-07T14:00", time: "Time TBA", loc: "Carter-Finley Stadium, Raleigh", cost: "Not published — confirm via link",
-      desc: "Home ACC game with Military Appreciation. Kickoff time not yet announced.",
+    { cat: "wolfpack", name: "NC State Football vs. Duke — Military Appreciation", date: "Sat, Nov 7", start: "2026-11-07T12:30", end: "2026-11-07T14:30", time: "12:30pm", loc: "Carter-Finley Stadium, Raleigh", cost: "Not published — confirm via link",
+      desc: "Home ACC game with Military Appreciation.",
       link: "https://gopack.com/sports/football/schedule", linkLabel: "Schedule →", preReg: false },
     { cat: "wolfpack", name: "NC State Men's Basketball vs. Presbyterian", date: "Tue, Nov 10", start: "2026-11-10T19:00", end: "2026-11-10T21:00", time: "7pm", loc: "Lenovo Center, Raleigh", cost: "Not published — confirm via link",
       desc: "Home game at the Lenovo Center.",
